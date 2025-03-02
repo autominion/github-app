@@ -1,0 +1,23 @@
+[package]
+name = "object-storage"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# data
+url = "2"
+uuid = "1"
+# async
+tokio = "1"
+# s3
+aws-sdk-s3 = "=1.67.0"
+aws-smithy-types = "1"
+aws-smithy-runtime-api = "1"
+# error handling
+thiserror = "1"
+# workspace members
+config = { path = "../config" }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt", "macros"] }
+dotenvy = "0.15"

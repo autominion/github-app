@@ -1,0 +1,38 @@
+[package]
+name = "frontend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# frontend
+leptos = { version = "0.7", features = ["csr"] }
+leptos_router = "0.7"
+leptos_router_macro = "0.7"
+web-sys = { version = "0.3", features = [
+    "Element",
+    "ScrollIntoViewOptions",
+    "ScrollBehavior",
+    "DomTokenList",
+    "ScrollToOptions",
+    "ScrollLogicalPosition",
+    "DomRect",
+] }
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
+pulldown-cmark = "0.9"
+# storage
+wasm-cookies = "0.2"
+# api
+url = "2"
+reqwest = { version = "0.11", features = ["json"] }
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+# error handling
+thiserror = "1"
+console_error_panic_hook = "0.1"
+wasm-logger = "0.2"
+# misc
+derivative = "2"
+# workspace members
+user-api = { path = "../../libs/user-api" }

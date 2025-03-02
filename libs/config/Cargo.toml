@@ -1,0 +1,13 @@
+[package]
+name = "config"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pkcs8 = { version = "0.9", features = ["alloc"] }
+serde = "1"
+toml = "0.7"
+url = { version = "2", features = ["serde"] }
+envy = "0.4"
+toml_edit = "0.19"
+pem = "1.0"

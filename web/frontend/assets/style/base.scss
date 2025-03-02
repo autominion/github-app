@@ -1,0 +1,163 @@
+@import "reset.scss";
+@import "colors.scss";
+@import "fonts.scss";
+@import "const.scss";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  flex: 1;
+}
+
+span.small-space {
+  margin-right: 0.25em;
+}
+
+span.medium-space {
+  margin-right: 0.5em;
+}
+
+div.content-container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  margin-bottom: $medium-spacing;
+}
+
+div.content {
+  width: 100%;
+  max-width: $max-content-width;
+  flex: 1;
+}
+
+section {
+  padding: $large-spacing $medium-spacing;
+}
+
+a,
+a:visited {
+  color: $color-blue;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: darken($color-blue, 10%);
+  outline: none;
+}
+
+p {
+  margin: 1em 0;
+}
+
+h1 {
+  font-family: "Roboto Bold", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+h2 {
+  font-family: "Roboto Bold", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: "Roboto Bold", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-family: "Roboto Bold", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-family: "Roboto Bold", sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 0.8rem;
+}
+
+h6 {
+  font-size: 0.85rem;
+  color: lighten($color-text, 40%);
+  margin-bottom: 0.75rem;
+}
+
+b {
+  font-family: "Roboto Bold", sans-serif;
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
+table {
+  margin-bottom: $small-spacing;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 4px;
+  padding-right: $small-spacing;
+}
+
+td {
+  padding-bottom: 4px;
+  padding-right: $small-spacing;
+}
+
+code {
+  font-family: monospace;
+  font-size: 0.9em;
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+ul,
+ol {
+  margin: 1em 0;
+  padding-left: 1.5em;
+  list-style-position: outside;
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+/* Styles for nested lists */
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin: 0;
+  padding-left: 1.5em;
+}
+
+@media (max-width: ($max-content-width + ($medium-spacing * 2))) {
+  div.content-container {
+    padding-left: $medium-spacing;
+    padding-right: $medium-spacing;
+  }
+}

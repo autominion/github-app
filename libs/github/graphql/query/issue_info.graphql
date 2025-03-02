@@ -1,0 +1,8 @@
+query IssueView($issue_id: ID!) {
+  node(id: $issue_id) {
+    __typename
+    ... on Issue {
+      body
+    }
+  }
+}

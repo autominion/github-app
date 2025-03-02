@@ -1,0 +1,9 @@
+query RepoNumericId($node_id: ID!) {
+  node(id: $node_id) {
+    __typename
+    ... on Repository {
+        __typename
+        databaseId
+    }
+  }
+}

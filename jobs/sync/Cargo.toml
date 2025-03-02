@@ -1,0 +1,14 @@
+[package]
+name = "sync"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# async
+tokio = { version = "1", features = ["full"] }
+# misc
+uuid = "1"
+# workspace members
+config = { path = "../../libs/config" }
+database = { path = "../../libs/database" }
+github = { path = "../../libs/github" }

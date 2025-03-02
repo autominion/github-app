@@ -1,0 +1,42 @@
+@import "const.scss";
+@import "colors.scss";
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: $medium-spacing;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal.visible {
+    display: block;
+}
+
+.modal-content {
+    background-color: $color-bg;
+    margin: 5% auto;
+    padding: $medium-spacing;
+    border-radius: 8px;
+    width: min(80%, $max-content-width);
+    box-shadow: 0 4px 12px rgba($color-text, 0.15);
+}
+
+.modal-close {
+    float: right;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

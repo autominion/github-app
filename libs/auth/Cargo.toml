@@ -1,0 +1,18 @@
+[package]
+name = "auth"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# auth
+jwt-compact = { version = "0.8", features = ["ed25519-compact", "rsa"] }
+serde = "1"
+rand = "0.8"
+uuid = { version = "1", features = ["serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+# actix support
+actix-jwt-auth-middleware = { git = "https://github.com/michaelvanstraten/actix-jwt-auth-middleware.git", rev = "89d579d0ae1e18c39da57863f94072a2f609739d" }
+actix-web = "4"
+# workspace members
+config = { path = "../config" }
+database = { path = "../database" }

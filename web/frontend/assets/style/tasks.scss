@@ -1,0 +1,9 @@
+@import "colors.scss";
+
+span.task-status.completed {
+    color: $color-green;
+}
+
+span.task-status.failed {
+    color: $color-red;
+}

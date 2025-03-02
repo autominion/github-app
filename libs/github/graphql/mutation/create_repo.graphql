@@ -1,0 +1,7 @@
+mutation CreateRepo($owner_id: ID!, $name: String!) {
+    createRepository(input: { ownerId: $owner_id, name: $name, visibility: PRIVATE }) {
+        repository {
+            id
+        }
+    }
+}

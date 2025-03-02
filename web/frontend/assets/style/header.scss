@@ -1,0 +1,13 @@
+@import "const.scss";
+@import "colors.scss";
+@import "navbar.scss";
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: $navbar-height;
+    background-color: #2b2b2b;
+    display: flex;
+    align-items: center;
+}

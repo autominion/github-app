@@ -1,0 +1,32 @@
+@import "colors.scss";
+@import "const.scss";
+
+.footer {
+    background-color: $color-bg;
+    padding: $medium-spacing 0;
+    text-align: center;
+    margin-top: auto;
+    border-top: 1px solid $color-border;
+
+    .footer-content {
+        max-width: $max-content-width;
+        margin: 0 auto;
+        padding: 0 $medium-spacing;
+    }
+
+    .footer-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: $small-spacing;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+        color: $color-blue;
+        text-decoration: none;
+        cursor: pointer;
+        transition: text-decoration 0.2s;
+    }
+}

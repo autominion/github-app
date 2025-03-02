@@ -1,0 +1,14 @@
+@import "colors.scss";
+@import "const.scss";
+
+.logs-container {
+  width: 100%;
+  padding: $medium-spacing;
+  margin: 0;
+  background-color: $color-bg;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+}

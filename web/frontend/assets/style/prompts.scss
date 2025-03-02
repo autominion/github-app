@@ -1,0 +1,105 @@
+@import "colors.scss";
+@import "const.scss";
+
+.prompts-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .prompt-item {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .prompt-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75em 1em;
+            border: 1px solid $color-border;
+            cursor: pointer;
+            transition: background-color 0.2s, border-color 0.2s;
+
+            .prompt-icon {
+                margin-left: auto;
+                color: lighten($color-text, 40%);
+                font-size: 1em;
+            }
+        }
+
+        &.active {
+            .prompt-header {
+                position: sticky;
+                top: 0;
+                z-index: 1;
+                background-color: $color-bg;
+            }
+        }
+
+        .message-list {
+            margin: 0;
+            padding: 0.5em 1.5em;
+            background-color: $color-bg;
+            border-left: 1px solid $color-border;
+            border-right: 1px solid $color-border;
+            border-bottom: 1px solid $color-border;
+        }
+
+        &:not(:first-child) {
+            .prompt-header {
+                border-top: none;
+            }
+        }
+    }
+}
+
+.message-item {
+    list-style: none;
+    margin: 0;
+    padding: 0.5em 0;
+
+    b {
+        font-weight: bold;
+        color: $color-text;
+    }
+
+    p {
+        margin: 0.5em 0;
+    }
+
+    &>* {
+        margin: 0.25em 0;
+    }
+
+    .message-content {
+        overflow-x: auto;
+    }
+}
+
+.follow-prompt-fab {
+    position: fixed;
+    bottom: $medium-spacing;
+    right: $medium-spacing;
+    background-color: $color-blue;
+    color: #fff;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: darken($color-blue, 5%);
+    }
+
+    i {
+        margin: 0;
+        color: #fff;
+    }
+}

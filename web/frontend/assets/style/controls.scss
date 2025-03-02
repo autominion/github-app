@@ -1,0 +1,267 @@
+@import "colors.scss";
+
+// Optional mixin for a consistent focus ring across controls
+@mixin focus-ring($color: $color-blue, $width: 2px) {
+    outline: none;
+    box-shadow: 0 0 0 $width $color;
+}
+
+button,
+a.button {
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: transparent;
+    box-shadow: 0 0 0 1px $color-border;
+    transition: background-color 0.2s, box-shadow 0.2s, border-color 0.2s, color 0.2s;
+
+    &:hover {
+        background-color: rgba($color-blue, 0.05);
+    }
+
+    &:focus {
+        @include focus-ring($color-blue, 2px);
+    }
+
+    &:active {
+        background-color: rgba($color-blue, 0.1);
+        box-shadow: 0 0 0 2px $color-blue;
+    }
+}
+
+button.light,
+a.button.light {
+    color: $color-text;
+    border-color: $color-border;
+    background-color: $color-bg;
+
+    &:hover {
+        background-color: rgba($color-bg, 0.6);
+    }
+
+    &:focus {
+        @include focus-ring($color-blue, 2px);
+    }
+
+    &:active {
+        background-color: rgba($color-bg, 0.7);
+    }
+}
+
+button.primary,
+a.button.primary {
+    color: $color-text;
+    background-color: transparent;
+
+    &:hover {
+        background-color: rgba($color-blue, 0.05);
+    }
+
+    &:focus {
+        @include focus-ring($color-blue, 2px);
+    }
+
+    &:active {
+        background-color: rgba($color-blue, 0.1);
+    }
+}
+
+button.danger,
+a.button.danger {
+    color: #fff;
+    box-shadow: 0 0 0 1px $color-red;
+    background-color: $color-red;
+
+    &:hover {
+        background-color: darken($color-red, 5%);
+    }
+
+    &:focus {
+        @include focus-ring($color-red, 2px);
+    }
+
+    &:active {
+        background-color: darken($color-red, 10%);
+        box-shadow: 0 0 0 2px $color-red;
+    }
+}
+
+div.card {
+    border-radius: 8px;
+    // Gentle shadow for subtle depth
+    box-shadow: 0 4px 8px rgba($color-text, 0.1);
+    padding: $medium-spacing;
+    background-color: $color-bg;
+}
+
+div.buttons-row {
+    display: flex;
+    align-items: center;
+    gap: $small-spacing;
+}
+
+.small-vertical-margins {
+    margin-top: $small-spacing;
+    margin-bottom: $small-spacing;
+}
+
+ul.listbox {
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    margin: $small-spacing 0;
+    min-height: 48px;
+    padding: 0;
+    background-color: $color-bg;
+}
+
+ul.listbox.scrollable {
+    overflow: auto;
+    max-height: 128px;
+}
+
+li.listitem {
+    height: 48px;
+    padding: $small-spacing;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $color-border;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: rgba($color-blue, 0.03);
+    }
+
+    &:focus,
+    &:active {
+        background-color: rgba($color-blue, 0.05);
+    }
+}
+
+li.placeholder {
+    font-family: "Roboto Italic", sans-serif;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-text;
+}
+
+li.listitem:last-of-type {
+    border: none;
+}
+
+div.stretch {
+    flex: 1;
+}
+
+.icon-button,
+.icon-button:visited {
+    cursor: pointer;
+    color: $color-text;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+
+    &:hover {
+        color: $color-blue;
+    }
+
+    &:focus {
+        @include focus-ring($color-blue, 2px);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+input[type="text"] {
+    padding: $small-spacing;
+    margin: $small-spacing 0;
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    color: $color-text;
+    background-color: $color-bg;
+    transition: border-color 0.2s, box-shadow 0.2s;
+
+    &:focus {
+        border-color: $color-blue;
+        box-shadow: 0 0 0 2px rgba($color-blue, 0.2);
+        outline: none;
+    }
+}
+
+div.input-row {
+    display: inline-flex;
+    align-items: center;
+    gap: $medium-spacing;
+}
+
+.tab-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid $color-border;
+    margin-bottom: 1rem;
+}
+
+.tab-bar {
+    display: inline-flex;
+    background: $color-bg;
+    border: 1px solid $color-border;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+}
+
+.tab-button {
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+    box-shadow: none;
+    color: $color-text;
+    opacity: 0.6;
+    transition: opacity 0.2s, background-color 0.2s;
+
+    &:hover {
+        opacity: 0.8;
+        background-color: rgba($color-blue, 0.03);
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        background-color: rgba($color-blue, 0.05);
+    }
+
+    &:active {
+        background-color: rgba($color-blue, 0.1);
+        box-shadow: none;
+    }
+
+    &:not(:last-child) {
+        border-right: 1px solid $color-border;
+    }
+
+    &.active {
+        opacity: 1;
+        background-color: rgba($color-blue, 0.05);
+    }
+}
+
+.tab-button.active {
+    color: inherit;
+}

@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+members = [
+    "web/frontend",
+    "jobs/sync",
+    "services/api",
+    "services/dispatcher",
+    "libs/user-api",
+    "libs/github",
+    "libs/config",
+    "libs/database",
+    "libs/auth",
+    "libs/object-storage",
+]

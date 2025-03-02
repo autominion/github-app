@@ -1,0 +1,7 @@
+mutation CreatePullRequest($repo_id: ID!, $base_ref: String!, $head_ref: String!, $title: String!, $body: String!) {
+    createPullRequest(input: { repositoryId: $repo_id, baseRefName: $base_ref, headRefName: $head_ref, title: $title, body: $body }) {
+        pullRequest {
+            id
+        }
+    }
+}

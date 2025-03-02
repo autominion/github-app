@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800"
+   height="640"
+   viewBox="0 0 211.66666 169.33333"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient32491">
+      <stop
+         style="stop-color:#0d1b2a;stop-opacity:1;"
+         offset="0"
+         id="stop32487" />
+      <stop
+         style="stop-color:#0d1b2a;stop-opacity:1;"
+         offset="1"
+         id="stop32489" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9351">
+      <stop
+         style="stop-color:#000000;stop-opacity:0.25;"
+         offset="0.00000002"
+         id="stop9347" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0.77999961"
+         id="stop9349" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient8572">
+      <stop
+         style="stop-color:#000000;stop-opacity:0.25;"
+         offset="0.00000002"
+         id="stop8568" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0.77999961"
+         id="stop8570" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2552">
+      <stop
+         style="stop-color:#0563bc;stop-opacity:1;"
+         offset="0"
+         id="stop2548" />
+      <stop
+         style="stop-color:#c30a0a;stop-opacity:1;"
+         offset="1"
+         id="stop2550" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient8572"
+       id="linearGradient8574"
+       x1="169.33333"
+       y1="-12.7"
+       x2="148.16667"
+       y2="-12.7"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.99999994,0,0,8.000001,-20.007612,28.863747)" />
+    <linearGradient
+       xlink:href="#linearGradient32491"
+       id="linearGradient16274"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="scale(1.0079365,4.0756164)"
+       x1="0"
+       y1="0"
+       x2="210"
+       y2="52.510422" />
+    <linearGradient
+       xlink:href="#linearGradient9351"
+       id="linearGradient56851"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.99999994,0,0,8.000001,-82.627058,246.86727)"
+       x1="169.33333"
+       y1="-12.7"
+       x2="148.16667"
+       y2="-12.7" />
+    <linearGradient
+       xlink:href="#linearGradient8572"
+       id="linearGradient57675"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.99999994,0,0,8.000001,-20.007606,198.19708)"
+       x1="169.33333"
+       y1="-12.7"
+       x2="148.16667"
+       y2="-12.7" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath59906">
+      <path
+         id="path59908"
+         style="fill:url(#linearGradient59910);stroke-width:0.53626;stroke-linecap:round;stroke-miterlimit:1"
+         d="M 0,0 H 211.66667 V 169.33333 H 0 Z" />
+    </clipPath>
+    <linearGradient
+       xlink:href="#linearGradient2552"
+       id="linearGradient59910"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="scale(1.0079365,4.0756165)"
+       x1="0"
+       y1="0"
+       x2="210"
+       y2="52.510422" />
+  </defs>
+  <g
+     id="layer1">
+    <path
+       id="rect318-9"
+       style="fill:url(#linearGradient16274);stroke:none;stroke-width:0.53626;stroke-linecap:round;stroke-miterlimit:1"
+       d="M 0,0 H 211.66667 V 169.33333 H 0 Z" />
+    <g
+       id="g59859"
+       clip-path="url(#clipPath59906)">
+      <rect
+         style="fill:url(#linearGradient8574);fill-opacity:1;stroke-width:0.748352;stroke-linecap:round;stroke-miterlimit:1"
+         id="rect8558"
+         width="21.166664"
+         height="169.33333"
+         x="128.15904"
+         y="-140.4696"
+         transform="rotate(31.203812)" />
+      <rect
+         style="fill:url(#linearGradient57675);fill-opacity:1;stroke-width:0.748352;stroke-linecap:round;stroke-miterlimit:1"
+         id="rect8558-5"
+         width="21.166664"
+         height="169.33333"
+         x="128.15906"
+         y="28.863724"
+         transform="rotate(31.203812)" />
+      <rect
+         style="fill:url(#linearGradient56851);fill-opacity:1;stroke-width:0.748352;stroke-linecap:round;stroke-miterlimit:1"
+         id="rect8558-7"
+         width="21.166664"
+         height="169.33333"
+         x="65.539574"
+         y="77.533905"
+         transform="rotate(-58.303401)" />
+    </g>
+  </g>
+</svg>
