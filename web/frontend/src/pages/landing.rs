@@ -10,9 +10,9 @@ pub fn LandingPage() -> impl IntoView {
 
     let header_message = view! {
         <>
-            <h1 class="hero-title">"Open Source Agent Runtime"</h1>
+            <h1 class="hero-title">"Introducing autominion"</h1>
             <p class="hero-subtitle">
-                "We are building an open-source runtime that connects software engineering tools with AI agents."<br/>
+                "We are building open-source software that connects software engineering tools with AI agents."<br/>
                 "It's still early stages - would you like to shape this project with us?"
             </p>
             <div class="buttons-center">
@@ -63,11 +63,11 @@ pub fn LandingPage() -> impl IntoView {
                                 <li>"They access a minimal additional HTTP API to retrieve their task and interact with the user."</li>
                             </ul>
                             <p class="section-text">
-                                "Agents can optionally use our open source " <code>"minion"</code> " library that implements the API specification, or use any custom implementation. The library is written in Rust which means that wrappers for other languages can be easily created."
+                                "Agents can optionally use our open source libraries that implements the API specification, or use any custom implementation. The libraries are written in Rust which means that wrappers for other languages can be easily created."
                             </p>
                             <h2 class="section-subtitle">"What does this mean for tools?"</h2>
                             <p class="section-text">
-                                "There is no daemon or separate application that tools have to integrate with. Tools can include "<code>"autominion"</code>", our open source library and have full control on how they expose the functionality to the user. The library is written in Rust which means that wrappers for other languages can be easily created. Alternatively, tools can also implement the API specification independently."
+                                "There is no daemon or separate application that tools have to integrate with. Tools can include our open source libraries and have full control on how they expose the functionality to the user. The libraries are written in Rust which means that wrappers for other languages can be easily created. Alternatively, tools can also implement the API specification independently."
                             </p>
                         </section>
                         <section class="section light">
