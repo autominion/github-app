@@ -78,7 +78,7 @@ pub fn LandingPage() -> impl IntoView {
                         </section>
                         <section class="section dark card">
                             <h1 class="section-title">"GitHub Integration"</h1>
-                            <div class="section-body reverse">
+                            <div class="section-body">
                                 <img class="section-img img-card" src="/img/github-comment.svg" alt="GitHub Integration" />
                                 <p class="section-text">
                                     "To build a good game engine, you should build a game! Eating our own "<span style="text-decoration: line-through">"dogfood"</span>" cake, we developed autominion alongside our first application: An open source GitHub integration that lets you interact with any open source agent from your GitHub repositories. The integration is fully open source and self-hostable."

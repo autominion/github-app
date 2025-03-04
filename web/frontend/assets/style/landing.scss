@@ -108,10 +108,6 @@ $dark-color: #0d1b2a;
         gap: 20px;
         margin-bottom: 20px;
 
-        &.reverse {
-            flex-direction: row-reverse;
-        }
-
         .section-img {
             max-width: 40%;
             border-radius: 4px;
@@ -185,7 +181,9 @@ $dark-color: #0d1b2a;
         flex-direction: column;
 
         .section-img {
-            max-width: 100%;
+            max-width: 100% !important;
+            // The order reverses on mobile
+            order: -1;
         }
     }
 }
