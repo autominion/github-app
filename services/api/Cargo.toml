@@ -39,10 +39,12 @@ once_cell = "1"
 thiserror = "1"
 # workspace members
 user-api = { path = "../../libs/user-api", features = ["database"] }
-agent-api = { path = "../../framework/libs/agent-api" }
 config = { path = "../../libs/config" }
 github = { path = "../../libs/github" }
 database = { path = "../../libs/database" }
 auth = { path = "../../libs/auth" }
-git-proxy = { path = "../../framework/libs/git-proxy" }
 object-storage = { path = "../../libs/object-storage" }
+# autominion framework
+agent-api = { path = "../../framework/libs/agent-api" }
+git-proxy = { path = "../../framework/libs/git-proxy" }
+llm-proxy = { path = "../../framework/libs/llm-proxy" }

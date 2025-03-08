@@ -436,6 +436,7 @@ dependencies = [
  "hex",
  "hmac",
  "jwt-compact",
+ "llm-proxy",
  "log",
  "object-storage",
  "once_cell",
@@ -3294,6 +3295,20 @@ name = "litemap"
 version = "0.7.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "23fb14cb19457329c82206317a5663005a4d404783dc74f4252769b0d5f42856"
+
+[[package]]
+name = "llm-proxy"
+version = "0.1.0"
+dependencies = [
+ "actix-web",
+ "actix-web-httpauth",
+ "futures-util",
+ "log",
+ "reqwest 0.11.27",
+ "serde",
+ "serde_json",
+ "url",
+]
 
 [[package]]
 name = "local-channel"
