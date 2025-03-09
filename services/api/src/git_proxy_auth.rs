@@ -12,7 +12,7 @@ use jwt_compact::{AlgorithmExt, UntrustedToken};
 use auth::{AgentSessionId, SessionId};
 use database::Database;
 
-use git_proxy::ForwardRepo;
+use git_proxy::{ForwardToRemote, ProxyBehaivor};
 
 pub async fn basic_auth_validator(
     db: Arc<Database>,
@@ -53,12 +53,12 @@ pub async fn basic_auth_validator(
     // For now we assume that the task id is the branch name
     let allowed_ref = format!("refs/heads/{}", task.id);
 
-    req.extensions_mut().insert(ForwardRepo {
+    req.extensions_mut().insert(ProxyBehaivor::ForwardToRemote(ForwardToRemote {
         url,
         basic_auth_user: "x-access-token".to_string(),
         basic_auth_pass: github_access_token.token,
         allowed_ref,
-    });
+    }));
 
     Ok(req)
 }
