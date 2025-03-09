@@ -53,12 +53,15 @@ pub async fn basic_auth_validator(
     // For now we assume that the task id is the branch name
     let allowed_ref = format!("refs/heads/{}", task.id);
 
-    req.extensions_mut().insert(ProxyBehaivor::ForwardToRemote(ForwardToRemote {
-        url,
-        basic_auth_user: "x-access-token".to_string(),
-        basic_auth_pass: github_access_token.token,
+    req.extensions_mut().insert(ProxyBehaivor {
         allowed_ref,
-    }));
+        forward: ForwardToRemote {
+            url,
+            basic_auth_user: "x-access-token".to_string(),
+            basic_auth_pass: github_access_token.token,
+        }
+        .into(),
+    });
 
     Ok(req)
 }
