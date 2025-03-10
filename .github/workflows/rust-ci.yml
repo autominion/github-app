@@ -15,7 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.ACCESS_FRAMEWORK_TOKEN }}
           submodules: true
       - run: rustup toolchain install stable --profile minimal --no-self-update
       - uses: Swatinem/rust-cache@v2
@@ -35,7 +34,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.ACCESS_FRAMEWORK_TOKEN }}
           submodules: true
       - run: rustup toolchain install stable --profile minimal --no-self-update
       - uses: Swatinem/rust-cache@v2
@@ -49,7 +47,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.ACCESS_FRAMEWORK_TOKEN }}
           submodules: true
       - run: rustup toolchain install stable --profile minimal --no-self-update
       - uses: Swatinem/rust-cache@v2
@@ -63,7 +60,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.ACCESS_FRAMEWORK_TOKEN }}
           submodules: true
       - run: rustup toolchain install stable --profile minimal --no-self-update
       - uses: Swatinem/rust-cache@v2
